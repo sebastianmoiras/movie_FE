@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-BASE_URL = os.getenv("http://104.214.185.151:8000")
+BASE_URL = os.getenv("BASE_URL")
 
 # === SESSION STATE ===
 if "token" not in st.session_state:
@@ -380,4 +380,5 @@ elif st.session_state["page"] == "recommend":
     recommend_page()
 elif st.session_state["page"] == "liked_movies":
     liked_movies_page()
+
 
